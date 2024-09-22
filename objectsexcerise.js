@@ -69,9 +69,9 @@
 // const post = new CreatPost("a", "b", "c");
 // console.log(post);
 
-//6th excercise
-const priceRang = [
-  { labe: "$", tooltip: "impressive", minperperson: 1, maxperperson: 10 },
-  { labe: "$$", tooltip: "modrate", minperperson: 11, maxperperson: 20 },
-  { labe: "$$$", tooltip: "expensive", minperperson: 21, maxperperson: 50 },
-];
+// //6th excercise
+// const priceRang = [
+//   { labe: "$", tooltip: "impressive", minperperson: 1, maxperperson: 10 },
+//   { labe: "$$", tooltip: "modrate", minperperson: 11, maxperperson: 20 },
+//   { labe: "$$$", tooltip: "expensive", minperperson: 21, maxperperson: 50 },
+// ];
