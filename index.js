@@ -113,3 +113,92 @@
 // for (let color of Colors) {
 //   console.log(color);
 // }
+
+// //objects
+// //factory function
+// function createFunction(radius) {
+//   return {
+//     radius,
+//     draw() {
+//       console.log(`Drawing circle with radius ${this.radius}`);
+//     },
+//   };
+// }
+
+// const circle1 = createFunction(10);
+// console.log(circle1);
+
+// //Consturctor function
+// function Circle(location) {
+//   this.location = location;
+//   this.draw = function () {
+//     console.log(`Drawing circle with location ${this.location}`);
+//   };
+// }
+
+// const circle2 = new Circle(20);
+// console.log(circle2);
+
+// // for-of loop for objects
+
+const person = {
+  name: "ali",
+  age: 21,
+
+  qaom() {
+    console.log(`Drawing circle with radius ${this.radius}`);
+  },
+};
+
+// for (let key in person) {
+//   console.log(key, ":", person[key]);
+// }
+
+// for (let key of Object.keys(person)) {
+//   console.log(key);
+// }
+
+// for (let entry of Object.entries(person)) {
+//   console.log(entry);
+// }
+// //in operator to check property in object
+// if ("name" in person) console.log("yes");
+
+//clonning
+//spread operator
+const person2 = { ...person };
+
+console.log(person2);
+
+//CLONING WITH for in loop
+// const anotherPerson = {};
+
+// for (let key in person) anotherPerson[key] = person[key];
+const anotherPerson = Object.assign({ color: "yellow" }, person);
+
+console.log(anotherPerson);
+//destructuring
+
+const person3 = {
+  name: "ali",
+  age: 21,
+};
+
+const { name, age } = person3;
+
+console.log(name, age);
+
+//tempalte litrals
+
+const lName = "raza";
+const name2 = `ali ${lName}`;
+console.log(name2);
+
+//date
+
+const now = new Date();
+const date1 = new Date("may 11 2024 09:00");
+
+now.setFullYear(2023);
+console.log(now.toDateString());
+console.log(now.toISOString()); //mostly used in web
