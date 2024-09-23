@@ -44,17 +44,17 @@
 // //getter setter
 // console.log(person.fullName);
 
-//this keyword
-const vedio = {
-  title: "a",
-  tags: ["a", "b", "c"],
-  showTags() {
-    // const self = this;
-    this.tags.forEach((tag) => {
-      console.log(this.title, tag);
-      //   console.log(self.title, tag);
-    }, this);
-  },
-};
+// //this keyword
+// const vedio = {
+//   title: "a",
+//   tags: ["a", "b", "c"],
+//   showTags() {
+//     // const self = this;
+//     this.tags.forEach((tag) => {
+//       console.log(this.title, tag);
+//       //   console.log(self.title, tag);
+//     }, this);
+//   },
+// };
 
-vedio.showTags();
+// vedio.showTags();
