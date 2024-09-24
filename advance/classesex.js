@@ -6,6 +6,7 @@ class Stack {
   push(obj) {
     _items.get(this).push(obj);
   }
+
   pop() {
     const items = _items.get(this);
 
