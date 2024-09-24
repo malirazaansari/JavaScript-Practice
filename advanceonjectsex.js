@@ -1,4 +1,8 @@
-function Stopwatch(start, end, running, duration = 0) {
+function Stopwatch() {
+  let start,
+    end,
+    running,
+    duration = 0;
   this.start = function () {
     if (running) {
       throw new Error("already start");
