@@ -75,3 +75,34 @@
 //   { labe: "$$", tooltip: "modrate", minperperson: 11, maxperperson: 20 },
 //   { labe: "$$$", tooltip: "expensive", minperperson: 21, maxperperson: 50 },
 // ];
+
+let person = {
+  name: "ali",
+  age: 22,
+  profession: "Web Developer",
+};
+
+selection = "profession";
+person["age"] = 35;
+
+console.log(person["age"]);
+// console.log(person.selection);
+
+let colors = ["red", "green", "blue"];
+
+colors[2] = "yellow";
+
+console.log(colors.length);
+
+function greetings(name, lastName) {
+  console.log("hello " + name + " " + lastName);
+}
+let name = "ansari";
+greetings("ali", "Raza");
+greetings("ali", name);
+
+let circle = (number) => {
+  return number * number;
+};
+
+console.log(circle(5));
