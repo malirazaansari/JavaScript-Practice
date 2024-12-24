@@ -20,3 +20,20 @@
 // console.log(cricle.area);
 
 //3rd ex
+
+person = {
+  firstName: "Ali",
+  lastName: "Raza",
+  get fullName() {
+    return `${person.firstName} ${person.lastName}`;
+  },
+  set fullName(value) {
+    let parts = value.split(" ");
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  },
+};
+
+person.fullName = "Raza Ansari";
+
+console.log(person.fullName);

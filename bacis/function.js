@@ -58,3 +58,89 @@
 // };
 
 // vedio.showTags();
+
+// Factory Functions
+// function createFunction(radius) {
+//   return {
+//     radius,
+//     draw() {
+//       console.log(`Drawing circle with radius ${this.radius}`);
+//     },
+//   };
+// }
+
+// const circle1 = createFunction(10);
+// circle1.draw();
+// function CreateFunction(radius) {
+//   this.radius = radius;
+//   this.draw = function () {
+//     console.log(`Drawing circle with radius ${this.radius}`);
+//   };
+// }
+
+// const circle4 = new CreateFunction(15);
+// circle4.draw();
+
+// function Stopwatch() {
+//   let startTime,
+//     running,
+//     endTime,
+//     duration = 0;
+//   this.start = function () {
+//     if (running) {
+//       throw new Error("Stopwatch is already running");
+//     }
+//     running = true;
+//     startTime = new Date();
+//   };
+//   this.end = function () {
+//     if (!running) {
+//       throw new Error("Stopwatch is not running");
+//     }
+//     running = false;
+//     endTime = new Date();
+
+//     const seconds = (endTime.getTime - startTime.getTime) / 1000;
+//     return (duration = +seconds);
+//   };
+//   this.reset = function () {
+//     running = false;
+//     startTime = null;
+//     endTime = null;
+//     duration = 0;
+//   };
+//   Object.defineProperty(this, "duration", {
+//     get: function () {
+//       return duration;
+//     },
+//   });
+// }
+
+// function morning(hour) {
+//   if (hour < 12 && hour > 6) {
+//     console.log("Good Morning");
+//   } else if (hour > 1 && hour < 4) {
+//     console.log("Good Afternoon");
+//   } else {
+//     console.log("Good Evening");
+//   }
+// }
+
+// morning(10);
+// morning(3);
+
+// for (i = 0; i < 5; i++) {
+//   console.log("value of I is, Helllo world from for loop", i);
+// }
+
+// let value = 5;
+// while (value < 10) {
+//   console.log("hello world from while loop", value);
+//   value++;
+// }
+
+// let done = 10;
+// do {
+//   console.log("hello world from do loop", done);
+//   done++;
+// } while (done < 15);
